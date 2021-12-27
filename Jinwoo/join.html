@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            margin: 0 auto;
+            overflow:scroll;
+        }
+        .background {
+            width: 1000px;
+            height: 2000px;
+            background-color: #ff6827;
+            margin:0 auto;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-left:15%;
+            margin-top:20%;
+            background-color: #fff;
+            float:left;
+        }
+        .logo-span {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: left;
+            color: #fff;
+            margin-top:20%;
+            margin-left:30px;
+            float:left;
+        }
+        .nickname {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: left;
+            color: #fff;
+            margin-left:15%;
+            margin-top:50%;
+        }
+        .nickname-input {
+            margin-left:15%;
+            margin-top:5%;
+            border-left-width:0px;
+            border-right-width:0px;
+            border-top-width:0px;
+            border-bottom-width:10px;
+            border-bottom-color:#fff;
+            background-color: #ff6827;
+            font-size: 40px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .profilephoto {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: left;
+            color: #fff;
+            margin-left:15%;
+            margin-top:40%;
+        }
+        .filebox {
+            display:inline-block;
+            margin-left:15%;
+            margin-top:5%;
+        }
+        .filebox label {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            display: inline-block;
+            padding: .5em .75em;
+            line-height: normal;
+            vertical-align:50%;
+            cursor: pointer;
+            border: 5px solid #ebebeb;
+            border-bottom-color: #e2e2e2;
+            border-radius: .25em;
+            border-style:dashed;
+            width:500px;
+        }
 
+        .filebox input[type="file"] {  /* 파일 필드 숨기기 */
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip:rect(0,0,0,0);
+            border: 0;
+        }
+        .complete {
+            width:300px;
+            height:100px;
+            background-color: #fff;
+            color: #ff6827;
+            font-size:40px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 30px;
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+            border: solid 1px #ff6827;
+            cursor: pointer;
+            margin-top:40%;
+            margin-left:35%;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div>
+            <div class="logo"></div>
+            <div class="logo-span">
+                <span>네이버 계정으로 시작할게요</span>
+            </div>
+        </div>
+        <div class="nickname">
+            <span>닉네임</span>
+        </div>
+        <input class="nickname-input" type="text" value="입력하세요!">
+        <div class="profilephoto">
+            <span>프로필 사진</span>
+        </div>
+        <div class="filebox">
+            <label for="ex_file">첨부하기</label> 
+            <input type="file" id="ex_file"> 
+        </div>
+        <form action="#" method="get">
+            <input type="submit" class="complete" value="완료" onclick="alert('제출완료!')"/>
+        </form>
+    </div>
+</body>
+</html>
