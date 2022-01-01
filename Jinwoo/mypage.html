@@ -1,1 +1,178 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            margin: 0 auto;
+            overflow:scroll;
+        }
+        .background{
+            margin: 0 auto;
+        }
+        .background_top {
+            width: 1000px;
+            height: 500px;
+            background-color: #ff6827;
+            margin:0 auto;
+            border:1px solid black;
+        }
+        .background_bottom {
+            width: 1000px;
+            height: 1500px;
+            margin:0 auto;
+            border:1px solid black;
+            border-top:0px;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-left:10%;
+            margin-top:15%;
+            background-color: #fff;
+            float:left;
+        }
+        .logo-span {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: left;
+            color: #fff;
+            margin-top:8%;
+            margin-left:30px;
+            float:left;
+        }
+        .profile {
+            width: 200px;
+            height: 200px;
+            margin-left:70%;
+            margin-top:15%;
+            background-color: #fff;
+            border-radius:50%;
+        }
+        .myreview {
+            margin-left:10%;
+            padding-top:15%;
+            font-size:30px;
+            font-weight: bold;
+        }
+        .review {
+            margin-left:7%;
+            margin-top:5%;
+        }
+        .review_photo {
+            width: 200px;
+            height: 200px;
+            margin-left:10%;
+            margin-top:5%;
+            background-color: #fff;
+            border-radius:50%;
+            box-shadow: 0px 0px 20px 8px gray;
+        }
+        .review_name {
+            margin-left:25%;
+            margin-top:12%;
+            font-size:30px;
+            font-weight: bold;
+        }
+        .mybestpick {
+            margin-left:10%;
+            margin-top:50%;
+            font-size:30px;
+            font-weight: bold;
+        }
+        .bestpick {
+            margin-left:7%;
+            margin-top:5%;
+        }
+        .bestpick_photo {
+            width: 200px;
+            height: 200px;
+            margin-left:10%;
+            margin-top:5%;
+            background-color: #fff;
+            border-radius:50%;
+            box-shadow: 0px 0px 20px 8px gray;
+        }
+        .bestpick_name {
+            margin-left:25%;
+            margin-top:12%;
+            font-size:30px;
+            font-weight: bold;
+        }
+        .quit {
+            width:200px;
+            height:80px;
+            background-color: #fff;
+            color: gray;
+            font-size:35px;
+            font-weight: bold;
+            text-align: center;
+            border: 0px;
+            cursor: pointer;
+            margin-top:30%;
+            margin-left:73%;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="background_top">
+            <div>
+                <div class="logo"></div>
+                <div class="logo-span">
+                    <p style="font-size:60px;">떡볶킹받네 님</p>
+                    <span>안녕하세요</span>
+                </div>
+            </div>
+            <div class="profile"></div>
+        </div>
+        <div class="background_bottom">
+            <div>
+                <div class="myreview">
+                    <span>내가 리뷰한 떡볶이집</span>
+                </div>
+                <div class="review">
+                    <div style="float:left;">
+                        <div class="review_photo"></div>
+                        <div class="review_name">
+                            <span>청년떡복이</span>
+                        </div>
+                    </div>
+                    <div style='margin-left:10%; float:left;'>
+                        <div class="review_photo"></div>
+                        <div class="review_name">
+                            <span>신전떡볶이</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="mybestpick">
+                    <span>내가 찜한 떡볶이집</span>
+                </div>
+                <div class="bestpick">
+                    <div style="float:left;">
+                        <div class="bestpick_photo"></div>
+                        <div class="bestpick_name">
+                            <span>엽기떡볶이</span>
+                        </div>
+                    </div>
+                    <div style='margin-left:10%; float:left;'>
+                        <div class="bestpick_photo"></div>
+                        <div class="bestpick_name">
+                            <span>불스떡볶이</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="#" method="get">
+                <input type="button" class="quit" value="회원탈퇴" onclick="alert('탈퇴완료!')"/>
+            </form>  
+        </div>
+    </div>
+</body>
+</html>
