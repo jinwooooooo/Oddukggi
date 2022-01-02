@@ -1,0 +1,275 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+/*status-bar*/
+.status-bar {
+    width: 850px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+  
+  .menu {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  .fa-search {
+    position: relative;
+    right: -300px;
+    bottom: -6px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+    background-color: #e4e9f1;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+  }
+  
+  .user {
+    height: 35px;
+    width: 35px;
+  }
+
+/*header*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6827;
+    width: 850px;
+    height: 200px;
+}
+
+.store-info_name {
+    display: flex;
+    font-size: xx-large;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff6827;
+    background-color: white;
+    position: relative;
+    right: -10px;
+    bottom: -5px;
+    font-size: large;
+    border-radius: 35px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.fa-heart {
+    position: relative;
+    left: -3px;
+}
+
+.store-info_address {
+    color: white;
+    font-weight: 530;
+    margin-bottom: 5px;
+}
+
+.store-info_call {
+    color: white;
+    font-weight: 530;
+    cursor: pointer;
+}
+
+.store-img, .store-img img {
+    width: 850px;
+    height: 400px;
+}
+
+/*main-hashtag*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 850px;
+}
+
+h2 {
+    color: #525252;
+}
+
+.hashtag-box {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.hashtag {
+    display:inline-block;
+    padding: 3px;
+    border: 1.5px solid #ff6827;
+    color: #ff6827;
+    background-color:white;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/*main-food-info*/
+.food-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -80px;
+    margin-top: 15px;
+    width: 600px;
+}
+
+.spicy-state, .season, .basic-ingred, .price {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.title {
+    width: 100px;
+    text-align: right;
+    color: #525252;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-right: 13px;
+}
+
+.spicy-line input[type=range] {
+    overflow:hidden;
+    -webkit-appearance: none;
+    width: 250px;
+    margin-right: 10px;
+    background-color: #ff6827;
+    border-radius: 30px;
+}
+
+.spicy-line input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background: #ffd2be;
+    height: 15px; 
+    border-radius: 30px;
+}
+
+.spicy-line input[type=range]::-webkit-slider-thumb {
+    height: 15px;
+    -webkit-appearance: none;
+    width: 100px;
+    cursor: pointer;
+    background-color: #ff6827;
+}
+
+.fa-pepper-hot {
+    color: red;
+}
+
+#pepper-state {
+    color: red;
+    font-weight: bold;
+}
+
+.season_box, .basic-ingred_box {
+    padding: 3px;
+    margin-right: 10px;
+    border: 1.5px solid #ff6827;
+    color: #ff6827;
+    background-color:white;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#price {
+    color: #ff6827;
+    font-weight: bolder;
+}
+
+#price_notice {
+    position: relative;
+    bottom: -3px;
+    right: -5px;
+    font-size: 10px;
+    opacity: 0.6;
+    font-weight: bolder;
+}
+
+/*main-review-box*/
+
+.review-box {
+    margin-top: 25px;
+}
+
+.material-icons-round.md-36 {
+    font-size: 36px;
+}
+
+.material-icons-round.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.review-box_top span {
+    position: relative;
+    top: -10px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.65);
+}
+.food-img img {
+    width: 150px;
+    height: 150px;
+}
+
+li {
+    display: flex;
+    justify-content:space-between;
+    width: 530px;
+    padding: 7px 15px 7px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+li span {
+    font-size: small;
+    font-weight: bolder;
+    color: #ff6827;
+}
+
+.move_review-write, .move_search-result2 {
+    position: relative;
+    right: -140px;
+    top: -50px;
+    width: 170px;
+    height: 50px;
+    border-radius: 85px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.move_review-write {
+    margin-right: 15px;
+    background-color: #ff6827;
+    color: white;
+    border:none;
+    box-shadow: -100px 20px 50px 15px #f1f1f1, 20px 20px 30px 15px #f1f1f1 ;
+}
+
+.move_search-result2 {
+    background-color: white;
+    color: #ff6827;
+    border: 2px solid #ff6827;
+    box-shadow: 100px 20px 30px 15px #f1f1f1;
+}
