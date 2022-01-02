@@ -1,0 +1,141 @@
+$orange: #ff6827;
+$width: 1000px;
+
+@mixin defaultLayout ($height: 100%) {
+    margin: 0 auto;
+    height: $height;
+    max-width: $width;
+    padding: 0 17px;
+}
+
+.off {
+    display: none;
+}
+
+#searchFilter {
+    .search-filterPage-cont {
+        @include defaultLayout;
+    }
+    .filter-item {
+        margin: 47px 0;
+        .filter-title {
+            margin: 16px 0;
+            font-size: 21px;
+            font-weight: 500;
+        }
+        .filter-btn-cont {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 9px;
+            .filter-btn {
+                padding: 6px 10px;
+                border-radius: 15px;
+                background-color: #fff;
+                border: 3px solid $orange;
+                color: $orange;
+                font-weight: 600;
+                font-size: 24px;
+                margin-right: 12px;
+                &:hover, &:active {
+                    color: #fff;
+                    background-color: $orange;
+                    box-sizing: border-box;
+                    box-shadow: 0px 0px 3px #FF6827;
+                }
+            }
+        }
+    }
+}
+
+.index-cont {
+    position: relative;
+    #mapCont {
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+    }
+    #searchFilter {
+        width: 100vw;
+        height: 100vh;
+        padding-top: 160px;
+        z-index: 1;
+    }
+    .head-cont {
+        position: absolute;
+        text-align: center;
+        width: 100vw;
+        height: 160px;
+        background: $orange;
+        top: 0;
+        box-sizing: border-box;
+        .index-nav-cont {
+            position: relative;
+            @include defaultLayout;
+            .userpage-btn-cont {
+                cursor: pointer;
+                opacity: 0.8;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 20px;
+                color: #fff;
+                font-size: 21px;
+            }
+            .main-nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                .logo {
+                    margin: 13px 0;
+                    color: #fff;
+                    font-size: 38px;
+                    font-weight: 700;
+                }
+                .search-cont {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0 auto;
+                    padding: 7px 18px;
+                    width: 100%;
+                    border-radius: 28px;
+                    background-color: #fff;
+                    box-sizing: border-box;
+                    #searchInput {
+                        width: 100%;
+                        background: transparent;
+                        border: none;
+                        padding: 4px 8px;
+                        font-size: 19px;
+                        &:focus {
+                            outline: none;
+                        }
+                        &::placeholder {
+                            font-size: 17px;
+                            font-family: 'Pretendard';
+                        }
+                    }
+                    #searchBtn {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        font-size: 26px;
+                        color: $orange;
+                    }
+                }
+            }
+        }
+        .search-nav-cont {
+            position: relative;
+            @include defaultLayout(auto);
+            h2 {
+                margin: 13px 0;
+                color: #fff;
+                font-size: 38px;
+                font-weight: 700;
+            }
+        }
+    }
+}
