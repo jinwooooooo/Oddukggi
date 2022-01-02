@@ -6,33 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오떠끼</title>
-    <link rel="stylesheet" href="../src/reset.css">
-    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
     <section class="index-cont">
-
-        <div class="map"></div>
+        <div id="mapCont" class=""></div>
+        <div id="searchFilter" class=""></div>
         <header class="head-cont">
-            <nav class="index-nav-cont">
-                <article class="sub-nav">
-                    
-                </article>
+            <article class="index-nav-cont">
+                <a class="userpage-btn-cont">
+                    <ion-icon name="person"></ion-icon>
+                </a>
                 <article class="main-nav">
-                    <h1>오떠끼 로고</h1>
+                    <h1 class="logo">오떠끼 로고</h1>
                     <form action="" class="search-cont">
-                        <input type="text" id="searchInput">
-                        <button type="button" id="searchBtn">icon</button>
+                        <input type="text" id="searchInput" placeholder="오늘 땡기는 떡볶이는?">
+                        <button type="button" id="searchBtn">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
                     </form>
                 </article>
-            </nav>
-            <article class="search-nav-cont">
+            </article>
+
+            <article class="search-nav-cont.off">
                 <h2>오늘 땡기는 떡볶이는?</h2>
             </article>
         </header>
 
     </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7c322984b4640192283426d975cb0138"></script>
+    <script>
+		var container = document.getElementById('mapCont');
+		var options = {
+			center: new kakao.maps.LatLng(37.555, 126.922),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
 </body>
 
 </html>
