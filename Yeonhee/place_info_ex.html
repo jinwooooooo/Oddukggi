@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/place_info_ex.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place info</title>
+</head>
+<body>
+    <div class="status-bar">
+        <img class= "menu" src="screenshots/menu.png" />
+        <i class="fas fa-search"></i>
+        <div class="profile">
+            <img class="user" src="screenshots/user.png" />
+        </div>
+    </div>
+    
+    <header class="store-info">
+         <div class="store-info_name">
+             우리할매떡볶이
+             <div class="heart">
+                <i class="far fa-heart"></i>
+                찜
+             </div>
+         </div>
+         <div class="store-info_address">
+            <i class="fas fa-map-marker-alt"></i>
+            서울 마포구 동교로 227-5
+         </div>
+         <div class="store-info_call">
+            <i class="fas fa-phone-alt"></i>
+            02-000-0000
+         </div>
+    </header>
+    <div class="store-img">
+        <img src="screenshots/가게.png" />
+    </div>
+
+    <main>
+        <h2>12명이 이 가게의 떡볶이를 자랑해주셨어요</h2>
+        <div class="hashtag-box">
+            <div class="hashtag">#기본</div>
+            <div class="hashtag">#끈적꾸덕</div>
+            <div class="hashtag">#판떡볶이</div>
+            <div class="hashtag">#고춧가루</div>
+            <div class="hashtag">#밀떡</div>
+            <div class="hashtag">#라면사리</div>
+        </div>
+        <div class="food-info">
+            <div class="spicy-state">
+                <span class="title">맵기</span>
+                <label class="spicy-line">
+                    <input type="range">
+                </label>
+                <i class="fas fa-pepper-hot"></i>
+                <span id="pepper-state">4.1</span>
+            </div>
+            <div class="season">
+                <span class="title">양념베이스</span>
+                <div class="season_box">#로제</div>
+            </div>
+            <div class="basic-ingred">
+                <span class="title">기본재료</span>
+                <div class="basic-ingred_box">#어묵</div>
+                <div class="basic-ingred_box">#소시지</div>
+                <div class="basic-ingred_box">#삶은달걀</div>
+            </div>
+            <div class="price">
+                <span class="title">1인분 가격</span>
+                <span id="price">3,500원</span>
+                <span id="price_notice">이 가게는 1인분 주문이 되지 않는 곳이에요. 1인분으로 계산된 가격입니다.</span>     
+            </div>
+        </div>
+        <div class="review-box">
+            <div class="review-box_top">
+                <i class="material-icons-round md-dark md-inactive md-36">question_answer</i>
+                <span>한줄평</span>
+            </div>
+            <div class="review-box_img">
+                <div class="food-img">
+                    <img class="food1" src="screenshots/food1.jpg" />
+                    <img class="food2" src="screenshots/food2.jpg" />
+                    <img class="food1" src="screenshots/food1.jpg" />
+                    <img class="food2" src="screenshots/food2.jpg" />
+                </div>
+            </div>
+            <ul>
+                <li>떡볶이 존맛이에요ㅠㅠ
+                    <span class="user-name">킹볶이</span>
+                </li>
+                <span class="line"></span>
+                <li>3번째 방문인데 역시 맛있네요
+                    <span class="user-name">킹볶이</span>
+                </li>
+                <li>3번째 방문인데 역시 맛있네요
+                    <span class="user-name">킹볶이</span>
+                </li>
+            </ul>
+            <button class="move_review-write" type="button">나도 자랑하기</button>
+            <button class="move_search-result2" type="button">지도앱에서 찾기</button>
+        </div>
+    </main>
+
+
+
+    <script src="https://kit.fontawesome.com/5826784a18.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
